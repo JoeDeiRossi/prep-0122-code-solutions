@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 4);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Ark">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>During filming in Tunisia, nearly everyone in the cast and crew got sick except director Steven Spielberg. It is thought
+        that he avoided illness by eating only the food he'd brought with him: a lot of cans of Spaghetti-O's.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple of Doom">
+        <h3>Temple of Doom</h3>
+        <p>While filming the whipping scene, the crew played a practical joke on Harrison Ford. While he was chained to a large
+        stone, Barbra Streisand appeared, dressed in a leather dominatrix outfit. She proceeded to whip him, saying "That's for
+        Hanover Street (1979), the worst movie I ever saw." She continued whipping him for Star Wars: Episode IV - A New Hope
+        (1977), and making all of that money. Carrie Fisher then threw herself in front of Ford to protect him, and Irvin
+        Kershner chided director Steven Spielberg. "Is this how you run your movies?" This entire sequence was filmed.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade">
+        <h3>The Last Crusade</h3>
+        <p>For the scene at the Nazi rally in Berlin, where Indiana (Harrison Ford) confronts Elsa (Alison Doody) and steals back
+        the diary, Steven Spielberg had all of the extras who did the Nazi salute simultaneously put their other arms behind
+        their backs and cross their fingers.</p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BZDIzNzM5MDUtZmI5MC00NGQ5LWFlNzEtYzE3ODIxNDI3ZmNhXkEyXkFqcGdeQXVyNjQ4ODE4MzQ@._V1_.jpg" alt="Kingdom of the Crystal Skull">
+        <h3 style="font-size: 1em;">Kingdom of the Crystal Skull</h3>
+        <p>No comment</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
